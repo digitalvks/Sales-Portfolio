@@ -9,6 +9,18 @@
 <meta property="og:title" content="Vinayak Soma | Account Executive and Sales Manager">
 <meta property="og:description" content="I turn cold outreach into closed revenue. 6+ years in sales across HP, Accenture, Apple and TELUS.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Vinayak Soma">
+<meta property="og:url" content="https://vinayaksoma.com/">
+<meta property="og:image" content="https://vinayaksoma.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vinayak Soma, Account Executive and Sales Manager. $1.2M+ pipeline, 120%+ quota, 12+ reps led.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vinayak Soma | Account Executive and Sales Manager">
+<meta name="twitter:description" content="I turn cold outreach into closed revenue. 6+ years in sales across HP, Accenture, Apple and TELUS.">
+<meta name="twitter:image" content="https://vinayaksoma.com/og-image.jpg">
+<link rel="canonical" href="https://vinayaksoma.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Caveat:wght@600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +48,7 @@ a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent;tou
 .me{position:relative;width:170px;height:170px;margin-top:18px}
 .me:before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--pink);border:2.5px solid var(--ink);translate:12px 12px}
 .me div{position:absolute;inset:0;border-radius:50%;border:2.5px solid var(--ink);background:var(--lemon);overflow:hidden;display:grid;place-items:center;font:800 56px "Bricolage Grotesque",sans-serif}
-.me img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.me picture{display:contents}.me img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hi{position:absolute;left:150px;top:-14px;background:#fff;border:2.5px solid var(--ink);border-radius:18px;padding:2px 14px;font:600 24px/1.2 Caveat,cursive;transform:rotate(4deg);white-space:nowrap}
 .hi:after{content:"";position:absolute;left:12px;bottom:-11px;width:16px;height:16px;background:#fff;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(45deg) skew(10deg,10deg)}
 .badge{display:inline-flex;align-items:center;gap:9px;background:#fff;border:2.5px solid var(--ink);border-radius:999px;padding:5px 14px;font-weight:600;font-size:15px}
@@ -105,6 +117,76 @@ footer{padding:32px 20px 8px;text-align:center;font-size:15px}
 .cols{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:1fr 1fr}.end{margin:var(--sec) auto 0;max-width:1000px;padding:90px 30px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .lv{opacity:1;transform:none}}
+/* ===== MOBILE ONLY (below the 760px breakpoint). Tablet and desktop are not touched. ===== */
+@media(max-width:759.98px){
+:root{color-scheme:light}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{overflow-wrap:break-word;text-rendering:optimizeSpeed}
+h1,h2,h3{text-wrap:balance}p,li,.sub,.lead{text-wrap:pretty}
+.w{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+/* touch behaviour */
+button,.btn,.tb a,.nv a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.btn,.tb a,.mail{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+/* nav: 44px touch targets */
+.nv .btn{min-height:44px}.nv .d{display:inline-flex;align-items:center;min-height:44px}
+/* hero: stop the grid column from growing wider than the screen */
+.hero .w{grid-template-columns:minmax(0,1fr)}
+.me{width:clamp(144px,46vw,170px);height:clamp(144px,46vw,170px)}
+.me div{font-size:clamp(46px,15vw,56px)}
+.hi{left:calc(100% - 18px);font-size:clamp(18px,5.6vw,24px)}
+.cta{gap:12px}
+.sg{margin-top:28px}
+.st b{font-size:clamp(27px,8.5vw,52px)}
+/* quest trail: reclaim width for the cards */
+.trail{padding-left:38px;margin-top:28px}.nd{left:-34px}
+.lv{padding:18px 18px 16px}
+.lv li{font-size:16px}
+.fl{height:100%;transform:scaleY(var(--tp));transform-origin:50% 0;will-change:transform}
+.rk{top:0;translate:0 calc(var(--tpx,0px) - 50%);will-change:translate}
+/* skills */
+.cols li{font-size:16.5px;line-height:1.35;padding:6px 15px}
+.two div{padding:18px 20px}
+/* contact */
+.end{margin-left:max(20px,env(safe-area-inset-left,0px));margin-right:max(20px,env(safe-area-inset-right,0px))}
+.mail{min-height:48px;transition:transform .2s var(--pop),box-shadow .2s}
+.mail:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.end .cta{gap:12px}
+footer{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));text-wrap:balance}
+/* bottom bar and toast */
+.tb{left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px))}
+.toast{max-width:calc(100vw - 40px);text-align:center}
+}
+/* quicker, lighter card reveal */
+@media(max-width:759.98px) and (prefers-reduced-motion:no-preference){
+.js .lv{transform:translateY(22px) rotate(-1deg);transition:opacity .4s ease-out,transform .5s var(--pop)}
+.js .lv.in{transform:none}
+}
+/* touch screens have no hover: stop hover states sticking after a tap */
+@media(max-width:759.98px) and (hover:none){
+.btn:hover{transform:none;box-shadow:4px 4px 0 var(--ink)}
+.nv .btn:hover{box-shadow:3px 3px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.nv .btn:active{box-shadow:1px 1px 0 var(--ink)}
+.st:hover,.cols li:hover{transform:none}
+}
+/* small phones: stack the buttons full width */
+@media(max-width:479.98px){
+.hero .cta .btn,.end .cta .btn{flex:1 1 100%}
+}
+@media(max-width:359.98px){
+.sg{gap:14px}.st{padding:14px 12px 16px}
+.lv{padding:16px 16px 14px}
+.end{padding-left:14px;padding-right:14px}
+}
+/* landscape phones: compact bars so content gets the room */
+@media(max-width:759.98px) and (max-height:480px) and (orientation:landscape){
+html{scroll-padding-top:calc(54px + env(safe-area-inset-top,0px))}
+body{padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+.nv{padding-top:calc(4px + env(safe-area-inset-top,0px));padding-bottom:4px}
+.tb a{min-height:40px;font-size:11px;gap:0}.tb svg{width:20px;height:20px}
+.toast{bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+.hero{padding-top:20px}
+}
 </style>
 </head>
 <body>
@@ -123,7 +205,7 @@ footer{padding:32px 20px 8px;text-align:center;font-size:15px}
 <svg class="dd" style="width:90px;left:-14px;bottom:30%;animation-delay:-2s" viewBox="0 0 100 40"><use href="#sq"/></svg>
 <svg class="dd" style="width:64px;right:10%;bottom:12%;animation-delay:-3s" viewBox="0 0 100 100"><use href="#tg"/></svg>
 <div class="w">
-<div class="me"><span class="hi">Hi, I’m Vinayak!</span><div>VS<img src="headshot.jpg" alt="Vinayak Soma" width="300" height="300" fetchpriority="high" decoding="async" onerror="this.remove()"></div></div>
+<div class="me"><span class="hi">Hi, I’m Vinayak!</span><div>VS<picture><source media="(max-width:759.98px)" srcset="headshot-170.jpg 1x, headshot-340.jpg 2x, headshot-510.jpg 3x"><img src="headshot.jpg" alt="Vinayak Soma" width="300" height="300" fetchpriority="high" decoding="async" onerror="this.remove()"></picture></div></div>
 <div><span class="badge"><i></i>Open to new opportunities</span>
 <h1>I build relationships. Close deals. <span class="hl">Drive growth.</span></h1>
 <p class="eb">The short version</p><p class="lead">6+ years in sales, including 4 in Canada. From leading teams at Reliance Jio to driving sales at Apple, TELUS, HP, and Accenture, I’ve built pipelines, won customers, exceeded targets, and delivered measurable growth.</p>
@@ -176,7 +258,7 @@ footer{padding:32px 20px 8px;text-align:center;font-size:15px}
 <button class="mail" id="copy" aria-label="Copy email address vkron77@gmail.com">vkron77@gmail.com</button>
 <div class="cta"><a class="btn" href="mailto:vkron77@gmail.com">Let’s talk</a><a class="btn" href="https://linkedin.com/in/vinayaksoma" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a><a class="btn y" href="Vinayak-Resume.pdf" download>View my resume</a></div></section>
 <footer>Vinayak Soma, Mississauga, Ontario. Canadian permanent resident.</footer>
-<nav class="tb" aria-label="Quick navigation"><a href="#top" class="on" data-t="top"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>Summary</a><a href="#story" data-t="story"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h12l-2.5 4L17 12H5"/></svg>Experience</a><a href="#skills" data-t="skills"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Skills</a><a href="#contact" data-t="contact"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg>Contact</a></nav>
+<nav class="tb" aria-label="Quick navigation"><a href="#top" class="on" data-t="top" aria-current="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>Summary</a><a href="#story" data-t="story"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h12l-2.5 4L17 12H5"/></svg>Experience</a><a href="#skills" data-t="skills"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Skills</a><a href="#contact" data-t="contact"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg>Contact</a></nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 (function(){var d=document,$=function(s){return d.querySelector(s)},$$=function(s){return[].slice.call(d.querySelectorAll(s))},rm=matchMedia('(prefers-reduced-motion:reduce)').matches,C=['#FF6B3D','#FF8FC7','#FFD23F','#2FD6A6','#55A8FF','#7B5CFF'];
@@ -184,8 +266,11 @@ function rnd(a,b){return a+Math.random()*(b-a)}
 /* career quest: reveal cards and move the rocket */
 var tr=$('#trail'),lv=$$('.lv'),tabs=$$('.tb a');
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});lv.forEach(function(l){io.observe(l)})}else lv.forEach(function(l){l.classList.add('in')});
-function mv(){var r=tr.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.55-r.top)/r.height));tr.style.setProperty('--tp',p.toFixed(4));var cur='top';['story','skills','contact'].forEach(function(i){if($('#'+i).getBoundingClientRect().top<innerHeight*.45)cur=i});if(innerHeight+scrollY>=d.documentElement.scrollHeight-4)cur='contact';tabs.forEach(function(a){a.classList.toggle('on',a.dataset.t===cur)})}
-var q=0;addEventListener('scroll',function(){if(!q){q=1;requestAnimationFrame(function(){q=0;mv()})}},{passive:true});addEventListener('resize',mv);mv();
+var secs=['story','skills','contact'].map(function(i){return $('#'+i)}),ids=['story','skills','contact'],lk='';
+function mv(){var r=tr.getBoundingClientRect(),h=innerHeight,p=Math.max(0,Math.min(1,(h*.55-r.top)/r.height)),cur='top';secs.forEach(function(e,i){if(e.getBoundingClientRect().top<h*.45)cur=ids[i]});if(h+scrollY>=d.documentElement.scrollHeight-4)cur='contact';
+var k=p.toFixed(4)+'|'+Math.round(r.height);if(k!==lk){lk=k;tr.style.setProperty('--tp',p.toFixed(4));tr.style.setProperty('--tpx',(p*r.height).toFixed(1)+'px')}
+tabs.forEach(function(a){var on=a.dataset.t===cur;if(a.classList.contains('on')!==on){a.classList.toggle('on',on);if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')}})}
+var q=0;addEventListener('scroll',function(){if(!q){q=1;requestAnimationFrame(function(){q=0;mv()})}},{passive:true});addEventListener('resize',mv);addEventListener('load',mv);if(d.fonts&&d.fonts.ready)d.fonts.ready.then(mv);if('ResizeObserver' in window)new ResizeObserver(mv).observe(tr);mv();
 /* copy email */
 var ts=$('#toast'),tt;function say(m){ts.textContent=m;ts.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){ts.classList.remove('on')},1800)}
 $('#copy').onclick=function(){var m='vkron77@gmail.com';if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(m).then(function(){say('Email copied')},function(){location.href='mailto:'+m});else location.href='mailto:'+m}})();
